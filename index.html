@@ -19,6 +19,19 @@
             color: white;
             box-shadow: 0 2px 10px rgba(0,0,0,0.2);
         }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0056b3;
+        }
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #004494;
+        }
         h1 {
             margin: 0;
         }
@@ -48,6 +61,15 @@
             margin-top: 10px;
             width: 100%;
         }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            position: relative; 
+            bottom: 0; 
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -56,21 +78,31 @@
     <h1>欢迎来到我的个人网站</h1>
 </header>
 
-<section>
+<nav>
+    <a href="#personal-info">个人信息</a>
+    <a href="#hobbies">兴趣爱好</a>
+    <a href="#favorite-singer">我最爱的女歌手</a>
+</nav>
+
+<section id="personal-info">
     <h2>个人信息</h2>
     <p>我的姓名是 <strong>白铃潇</strong>，学号是 <strong>3222271</strong>，目前就读于 <strong>岭南大学</strong> - 融合科技专业。</p>
 </section>
 
-<section>
+<section id="hobbies">
     <h2>兴趣爱好</h2>
     <p>我的兴趣爱好是<strong>摄影</strong>。</p>
-    <img src="photo1.jpg" alt="摄影作品1">
-    <p>这是一幅我拍摄的风景照片，展示了自然的美。</p>
-    <img src="photo2.jpg" alt="摄影作品2">
-    <p>这是一幅我拍摄的人物肖像，捕捉了情感的瞬间。</p>
+    <div class="gallery">
+        <img src="photo1.jpg" alt="摄影作品1">
+        <p>这是一幅我拍摄的风景照片，展示了自然的美。</p>
+    </div>
+    <div class="gallery">
+        <img src="photo2.jpg" alt="摄影作品2">
+        <p>这是一幅我拍摄的人物肖像，捕捉了情感的瞬间。</p>
+    </div>
 </section>
 
-<section>
+<section id="favorite-singer">
     <h2>我最爱的女歌手</h2>
     <p>我最爱的女歌手是<strong>IU</strong>。</p>
     <img src="iu.jpg" alt="IU的照片">
@@ -80,6 +112,10 @@
     </audio>
     <p>这是IU的一首歌曲，希望大家喜欢！</p>
 </section>
+
+<footer>
+    <p>&copy; 2024 白铃潇. 版权所有.</p>
+</footer>
 
 </body>
 </html>
